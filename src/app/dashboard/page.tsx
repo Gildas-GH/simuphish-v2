@@ -79,7 +79,7 @@ export default function Page() {
     >
       <AppSidebar mails={inbox} />
       <SidebarInset>
-        <header className="sticky top-0 flex justify-between shrink-0 border-b bg-background p-4">
+        <header className="flex justify-between border-b bg-background p-4">
           <div className="flex items-center gap-2">
             <SidebarTrigger className="-ml-1" />
             <Separator orientation="vertical" className="mr-2 h-4 hidden md:block" />
@@ -111,13 +111,13 @@ export default function Page() {
           </div>
 
           <div className="flex gap-4">
-            <div className="flex items-center px-2 gap-4 bg-sidebar-accent rounded min-w-24">
+            <div className="hidden sm:flex items-center px-2 gap-4 bg-sidebar-accent rounded min-w-24">
               <Clock onClick={() => reset()} />{Math.floor(time / 60) + ":" + time % 60}
             </div>
             <div className="flex items-center px-2 gap-4 bg-sidebar-accent rounded">
               <Trophy /> {goodPoints}
             </div>
-            <div className="flex items-center px-2 gap-4 bg-sidebar-accent rounded">
+            <div className="hidden sm:flex items-center px-2 gap-4 bg-sidebar-accent rounded">
               <Frown /> {badPoints}
             </div>
           </div>

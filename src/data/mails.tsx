@@ -43,7 +43,7 @@ const mails: Mail[] = [
     },
     {
         name: "ANTAl",
-        email: "ne_pas_repondre@antaj-contravention-gouv.fr",
+        email: "ne_pas_repondre@antaj-alerte-gouv.fr",
         toName: "Victor Marchand",
         toMail: "victor.marchand@kernaval.com",
         subject: "(1) Nouveau message important de l'ANTAl",
